@@ -1,10 +1,11 @@
-nclude "main.h"
-/**
- * main - Print _putchar
- *
- * Return: Always 0 (Success)
- */
+#include "main.h"
 
+/**
+ * main - Entry point
+ *
+ * Return: Always returns 0
+ *
+ */
 int main(void)
 {
 	_putchar('_');
@@ -17,4 +18,4 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 	return (0);
-}}
+}
