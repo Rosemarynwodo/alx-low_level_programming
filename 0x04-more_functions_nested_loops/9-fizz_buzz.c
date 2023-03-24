@@ -1,20 +1,36 @@
-#!/usr/bin/env bash
-#fizzbuzz stuf
+#include "main.h"
+#include <stdio.h>
 
-count=1
-while [ $count -ne 101 ]
-do
-    if [ $((count % 15)) -eq 0 ]
-    then
-	echo "FizzBuzz"
-    elif [ $((count % 3)) -eq 0 ]
-    then
-	echo "Fizz"
-    elif [ $((count % 5)) -eq 0 ]
-    then
-        echo "Buzz"
-    else
-	echo $count
-    fi
-    ((count++))
-done
+/**
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * but for multiples of three prints Fizz instead of the number
+ * and for the multiples of five prints Buzz
+ * Return: Always 0 (Success)
+ */
+int main(void)
+{
+	int i;
+
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 != 0)
+		{
+			printf(" Fizz");
+		} else if (i % 5 == 0 && i % 3 != 0)
+		{
+			printf(" Buzz");
+		} else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf(" FizzBuzz");
+		} else if (i == 1)
+		{
+			printf("%d", i);
+		} else
+		{
+			printf(" %d", i);
+		}
+	}
+	printf("\n");
+
+	return (0);
+}
