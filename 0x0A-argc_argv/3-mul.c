@@ -22,5 +22,6 @@ int main(int argc, char *argv[])
 	diff = b * c;
 
 	printf("%d\n", diff);
+	
 	return (0);
 }
