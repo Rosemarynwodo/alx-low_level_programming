@@ -2,16 +2,16 @@
 
 /**
  * Factorial - gets factoral of n
- * @n: integer
- *
- * Return: on success 1
- * On error,-1 is returned errno is set appropriately
+ * @n: the number to find the factorials of
+ * Return: the factorial of @n
  */
-int factorial (int n)
+int factorial(int n);
 {
 	if (n < 0)
 		return (-1);
-	if (n == 0)
+
+	else if (n == 0)
 		return (1);
-	Return (n * factorial(n - 1));
+
+	return (n * factorial(n - 1));
 }
