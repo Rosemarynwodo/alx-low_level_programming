@@ -1,5 +1,4 @@
-#include <stdlib.h>	
-
+#include <stdlib.h>
 /**
  * print_name - calls a function that prints a name
  * @name: the name to print
